@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create An Account - Techy.page</title>
+	<link rel="stylesheet" type="text/css" href="styles/login_signup.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+<body>
+	<div class="container">
+		<form class="item" method="post" action="signup_confirm" enctype="multipart/form-data" style="overflow-y:auto;">
+			<div class="logocontainer">
+				<a href="./"><img src="images/logo.jpg" />
+				<div>Home</div></a>
+			</div>
+			<header style="color: purple; font-size: 24px; text-align: left;">
+				Sign Up
+			</header>
+			<div style="padding-top: 40px;">
+				<header>
+					<u>Basic Information</u><br><br>
+				</header>
+				<input type="text" placeholder="First Name" name="firstname" required />
+				<input type="text" placeholder="Last Name" name="lastname" required /><br><br>
+				<input type="email" placeholder="Email" name="email" required />
+				<input type="password" placeholder="Password" name="password" required /><br><br>
+				<header>
+					<u>Location Information</u><br><br>
+				</header>
+				<input type="text" placeholder="City" name="city" />
+				<input type="text" placeholder="State" name="state" /><br><br>
+				<header>
+					<u>Employment Information</u><br><br>
+				</header>
+				<fieldset>
+					<legend>Select all roles that apply to you</legend>
+					<table>
+						<tr>
+							<td>
+								<input type="checkbox" name="usertype[]" id="freelancer" value="freelancer" onclick="showWageOptions()" />
+								<label for="freelancer">Freelancer</label>
+							</td>
+							<td>
+								<input type="checkbox" name="usertype[]" id="employer" value="employer" />
+								<label for="employer">Employer</label>
+							</td>
+						</tr>
+						<tr id="wageoptions">
+							<td>
+								<span class="currency">$<input type="number" placeholder="Min Hourly Wage" name="minwage" /></span>
+							</td>
+						</tr>
+					</table>
+				</fieldset><br><br>
+				<fieldset>
+					<legend>Select any languages you know</legend>
+					<table>
+						<tr>
+							<td>
+								<input type="checkbox" name="languages[]" id="html" value="1" />
+								<label for="html">HTML</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="css" value="2" />
+								<label for="css">CSS</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="php" value="3" />
+								<label for="php">PHP</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="javascript" value="4" />
+								<label for="javascript">JavaScript</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" name="languages[]" id="java" value="5" />
+								<label for="java">Java</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="swift" value="6" />
+								<label for="swift">Swift</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="go" value="7" />
+								<label for="go">Go</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="c++" value="8" />
+								<label for="c++">C++</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" name="languages[]" id="c#" value="9" />
+								<label for="c#">C#</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="vbnet" value="10" />
+								<label for="vbnet">Visual Basic .NET</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="python" value="11" />
+								<label for="python">Python</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="mysql" value="12" />
+								<label for="mysql">MySQL</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" name="languages[]" id="ruby" value="13" />
+								<label for="ruby">Ruby</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="c" value="14" />
+								<label for="c">C</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="objective-c" value="15" />
+								<label for="objective-c">Objective-C</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="postgresql" value="16" />
+								<label for="postgresql">PostgreSQL</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" name="languages[]" id="mongodb" value="17" />
+								<label for="mongodb">MongoDB</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="assemblylanguage" value="18" />
+								<label for="assemblylanguage">Assembly Language</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="r" value="19" />
+								<label for="r">R</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="matlab" value="20" />
+								<label for="matlab">MATLAB</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" name="languages[]" id="objectpascal" value="21" />
+								<label for="objectpascal">Object Pascal</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="vb" value="22" />
+								<label for="vb">Visual Basic</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="pl/sql" value="23" />
+								<label for="pl/sql">PL/SQL</label>
+							</td>
+							<td>
+								<input type="checkbox" name="languages[]" id="perl" value="24" />
+								<label for="perl">Perl</label>
+							</td>
+						</tr>
+					</table>
+				</fieldset><br><br>
+				<header>
+					<u>Personal Statement</u><br><br>
+				</header>
+				<textarea name="description" placeholder="Write a short description about yourself..." cols="40" rows="8" required></textarea><br><br>
+				<header>
+					<u>Profile Picture</u><br><br>
+				</header>
+				<input type="hidden" name="MAX_FILE_SIZE" value="500000" />
+				<input class="fileinput" type="file" accept="image/png, image/jpeg" id="profile_pic" name="profile_pic" />
+				<label for="profile_pic"><img class="uploadimage" src="images/upload.png" height="50" width="130" /></label><br><br>
+				<input type="submit" value="Sign Up!" /><br><br>
+			</div>
+		</form>
+	</div>
+	<script src="scripts/main.js"></script>
+</body>
+</html>

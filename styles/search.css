@@ -1,0 +1,278 @@
+main {
+	background-color: #C8E3DF;
+	width: 960px;
+	height: 1000px;
+	margin-left: 100px;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	overflow-y: auto;
+	z-index: 0;
+	position: relative;
+}
+
+#searchbar {
+	position: absolute;
+	top: 30px;
+	width: 260px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+#searchbar form {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+#searchbaritem {
+	width: 210px;
+	height: 30px;
+	font-size: 18px;
+	border-radius: 25px;
+	padding: 5px;
+	padding-left: 10px;
+	outline: none;
+}
+
+#search {
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+main .section {
+	width: 1280px;
+	padding: 20px;
+	position: absolute;
+	top: 100px;
+	margin-bottom: 100px;
+	background-color: white;
+	box-shadow: 1px 1px 5px #333;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.subsection {
+	background-color: #ddd;
+	margin-bottom: 10px;
+	padding: 10px;
+	display: flex;
+	width: 1240px;
+	height: 250px;
+}
+
+.subsection .info-container {
+	display: flex;
+}
+
+.subsection .imagecontainer {
+	width: 250px;
+	height: 240px;
+	margin: 0;
+	padding: 0;
+}
+
+.subsection .imagecontainer img {
+	width: 90%;
+	height: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin-top: 5px;
+}
+
+.subsection .credentials {
+	width: 600px;
+	height: 230px;
+	padding: 10px;
+	padding-right: 20px;
+	position: relative;
+	border-right: 1px solid #333;
+}
+
+.subsection .credentials .name {
+	font-size: 24px;
+	color: navy;
+}
+
+.subsection .credentials .usertype {
+	font-size: 20px;
+	color: indigo;
+}
+
+.subsection .credentials .wagerate {
+	font-size: 20px;
+	color: darkgreen;
+}
+
+.subsection .credentials .location {
+	color: darkred;
+	font-size: 20px;
+}
+
+.subsection .credentials .languages {
+	font-size: 18px;
+	position: absolute;
+	bottom: 10px;
+}
+
+.subsection .actions {
+	width: 389px;
+	height: 230px;
+	padding: 10px;
+	text-align: center;
+	padding-top: 75px;
+}
+
+.subsection .actions .action {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1420px) {
+
+	main .section {
+		width: 800px;
+	}
+
+	.subsection {
+		width: 760px;
+	}
+
+	.subsection .imagecontainer {
+		width: 200px;
+		height: 190px;
+		transform: translateY(20px);
+	}
+
+	.subsection .credentials {
+		width: 300px;
+	}
+
+	.subsection .credentials .languages {
+		display: none;
+	}
+
+	.subsection .actions {
+		width: 259px;
+	}
+
+}
+
+@media only screen and (max-width: 920px) {
+
+	main .section {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.subsection {
+		width: 100%;
+		height: 320px;
+		display: block;
+	}
+
+	.subsection .info-container {
+		width: 100%;
+		border-bottom: 1px solid #333;
+	}
+
+	.subsection .imagecontainer {
+		width: 200px;
+		height: 190px;
+		transform: translateY(20px);
+	}
+
+	.subsection .credentials {
+		width: auto;
+		border-right: none;
+	}
+
+	.subsection .actions {
+		width: 100%;
+		height: auto;
+		display: flex;
+		padding-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.subsection .actions .actions-container {
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+	}
+
+	.subsection .actions .actions-container .action {
+		padding: 5px;
+		margin: 0;
+	}
+
+}
+
+@media only screen and (max-width: 560px) {
+
+	#namedisplay {
+		display: none;
+	}
+
+	.subsection {
+		height: 270px;
+	}
+
+	.subsection .imagecontainer {
+		width: 150px;
+		height: 140px;
+	}
+
+	.subsection .credentials {
+		height: 190px;
+	}
+
+	.subsection .credentials .location {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	#titlewrapper {
+		display: none;
+	}
+
+	#subtitle {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 360px) {
+
+	.subsection .actions {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+@media only screen and (max-width: 340px) {
+
+	.subsection {
+		height: 320px;
+	}
+
+	.subsection .actions .actions-container {
+		display: block;
+	}
+
+}

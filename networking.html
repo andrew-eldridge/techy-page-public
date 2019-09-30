@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Techy.page</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" id="stylesheet" />
+    <link rel="shortcut icon" href="images/simpleLogo.jpg" id="favicon" />
+
+</head>
+
+<body onresize = "updateUI()" onload="updateUI()">
+
+<div id="wrapper">
+
+    <div id="banner">
+
+        <div id="logowrapper" onclick="redirect('home')">
+            <img src="images/logo.jpg" id="logo" />
+        </div>
+
+        <div id="titlewrapper">
+            Techy.page
+        </div>
+
+        <div id="accountwrapper" onclick="toggleDropdown(-1)">
+            <img src="images/accounts.png" />
+        </div>
+
+        <div id="accountdropdown">
+            <div class="header dropdownheader">
+                Account
+            </div>
+            <div class="subcontent">
+                <ul>
+                    <li>
+                        <img src="images/login.png" />
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li>
+                        <img src="images/signup.png" />
+                        <a href="signup.html">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="testnav">
+
+        <ul>
+            <li class="navsection" onmouseover="updateNav(0, true)" onmouseout="updateNav(0, false)" onclick="toggleDropdown(0)">
+                <img src="images/network.png" />
+            </li>
+            <li class="navsection" onmouseover="updateNav(1, true)" onmouseout="updateNav(1, false)" onclick="toggleDropdown(1)">
+                <img src="images/products.png" />
+            </li>
+            <li class="navsection" onmouseover="updateNav(2, true)" onmouseout="updateNav(2, false)" onclick="toggleDropdown(2)">
+                <img src="images/social.png" />
+            </li>
+            <li class="navsection" onmouseover="updateNav(3, true)" onmouseout="updateNav(3, false)" onclick="toggleDropdown(3)">
+                <img src="images/about.png" />
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="dropdowncontent">
+
+        <div class="header dropdownheader">
+            Networking
+        </div>
+
+        <nav class="subcontent">
+            <ul>
+                <li>
+                    <img src="images/business.png" />
+                    <a href="networking.html#business">Business Relations</a>
+                </li>
+                <li>
+                    <img src="images/code.svg" />
+                    <a href="networking.html#recruitment">Employee Recruitment</a>
+                </li>
+                <li>
+                    <img src="images/team.png" />
+                    <a href="networking.html#team">Build Teams</a>
+                </li>
+                <li>
+                    <img src="images/share.png" />
+                    <a href="networking.html#share">Share Projects</a>
+                </li>
+                <li>
+                    <img src="images/forums.png" />
+                    <a href="networking.html#forums">Forums</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="dropdowncontent">
+
+        <div class="header dropdownheader">
+            Products
+        </div>
+
+        <div class="subcontent">
+            <ul>
+                <li>
+                    <img src="images/merch.png" />
+                    <a href="products.html#merch">Merchandise<br><span style="font-size:16px; color:purple; font-style:italic;">100% proceeds to charity</span></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header dropdownheader">
+            Services
+        </div>
+
+        <div class="subcontent">
+            <ul>
+                <li>
+                    <img src="images/computer.png" />
+                    <a href="products.html#websitedesign">Website Design</a>
+                </li>
+                <li>
+                    <img src="images/code.svg" />
+                    <a href="products.html#codinglessons">Coding Lessons<br><span style="color:green; font-style:italic; font-weight:bold;">Free</span></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="dropdowncontent">
+
+        <div class="header dropdownheader">
+            Social Media
+        </div>
+
+        <div class="subcontent">
+            <ul class="imageonly">
+                <li>
+                    <a href="youtube.com" target="_blank"><img src="images/youtube.png" /></a>
+                </li>
+                <li>
+                    <a href="facebook.com" target="_blank"><img src="images/facebook.png" /></a>
+                </li>
+                <li>
+                    <a href="twitter.com" target="_blank"><img src="images/twitter.jpg" /></a>
+                </li>
+                <li>
+                    <a href="instagram.com" target="_blank"><img src="images/instagram.png" /></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="dropdowncontent">
+
+        <div class="header dropdownheader">
+            About
+        </div>
+
+        <nav class="subcontent">
+
+        </nav>
+
+    </div>
+
+    <div id="antishadow">
+        <div id="shadow"></div>
+    </div>
+
+    <main>
+
+
+
+    </main>
+
+</div>
+
+<script src="scripts/main.js"></script>
+
+</body>
+
+</html>

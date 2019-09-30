@@ -1,0 +1,381 @@
+/* Page wrapper */
+
+#wrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	background-color: #C8E3DF;
+	overflow-x: hidden;
+}
+
+/* Message banner */
+
+.message-banner {
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	height: 50px;
+	width: 90%;
+	padding: 10px;
+	margin: 0;
+	font-size: 22px;
+	color: #000;
+	-webkit-transition: height 240ms, padding 240ms;
+	transition: height 240ms, padding 240ms;
+	text-align: center;
+	z-index: 100;
+	box-shadow: 1px 1px 10px #333;
+	border-radius: 5px;
+}
+
+.success-banner {
+	background-color: #40c03f;
+}
+
+.error-banner {
+	background-color: #e70617;
+}
+
+/* Banner */
+
+#banner {
+	width: 100%;
+	height: 100px;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	background-color: #fff;
+	box-shadow: 0 1px 4px #333;
+	position: relative;
+	z-index: 3;
+}
+
+/* Banner -> Logo */
+
+#banner #logowrapper  {
+	padding: 10px;
+	margin: 0;
+	height: 100px;
+	width: 100px;
+}
+
+#banner #logowrapper:hover {
+	cursor: pointer;
+}
+
+#banner #logowrapper #logo {
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* Banner -> Title */
+
+#banner #titlewrapper {
+	margin: 0;
+	padding: 10px;
+	padding-left: 0;
+	color: indigo;
+	font-size: 36px;
+	height: 80px;
+	width: 360px;
+}
+#banner #titlewrapper:hover {
+	cursor: default;
+}
+
+#banner #subtitle {
+	position: absolute;
+	left: 105px;
+	bottom: 15px;
+	font-size: 18px;
+	color: navy;
+}
+
+#banner #subtitle:hover {
+	cursor: default;
+}
+
+/* Banner -> Account */
+
+#banner #namedisplay {
+	position: absolute;
+	right: 120px;
+	padding: 35px;
+	padding-right: 0;
+	color: navy;
+	font-size: 24px;
+}
+
+#banner #accountwrapper {
+	height: 100px;
+	width: 100px;
+	margin: 0;
+	margin-right: 10px;
+	padding: 20px;
+	position: absolute;
+	right: 0;
+}
+#banner #accountwrapper:hover {
+	cursor: pointer;
+}
+
+#banner #accountwrapper img {
+	padding: 0;
+	margin: 0;
+	width: 60px;
+	height: 60px;
+  	border-radius: 50%;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	background-size: cover;
+}
+
+/* Banner -> Account -> Account Dropdown */
+
+#accountdropdown {
+	position: absolute;
+	right: 10px;
+	top: 100px;
+	width: 300px;
+	padding: 0;
+	margin: 0;
+	display: none;
+	background-color: white;
+	z-index: 2;
+	overflow-y: auto;
+	overflow-x: hidden;
+	box-shadow: -1px 1px 2px black, 1px 1px 2px black;
+}
+
+#accountdropdown:hover {
+	cursor: default;
+}
+
+#accountdropdown .dropdownheader {
+	text-align: left;
+	margin-left: 25px;
+	margin-top: 10px;
+	font-size: 32px;
+}
+
+/* Paragraph (used only in accounts) */
+
+#accountdropdown p {
+	font-size: 20px;
+	font-style: italic;
+	color: darkred;
+	text-align: center;
+	margin: 0;
+	padding: 20px;
+}
+
+/* Dropdown Content */
+
+.dropdowncontent {
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 300px;
+	padding: 0;
+	margin: 0;
+	display: none;
+	background-color: white;
+	z-index: 2;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.dropdowncontent:hover {
+	cursor: default;
+}
+
+.dropdowncontent .dropdownheader {
+	text-align: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 32px;
+}
+
+/* Dropdown Content -> Subcontent */
+
+.subcontent  {
+	width: 300px;
+	padding: 0;
+	margin: 0;
+}
+
+.subcontent p {
+	font-size: 20px;
+	width: 80%;
+	font-style: italic;
+	color: darkred;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+
+.subcontent ul {
+	padding: 0;
+	margin: 0;
+}
+
+.subcontent ul li {
+	height: 80px;
+	padding: 5px;
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	padding-left: 25px;
+}
+
+.subcontent ul li img {
+	max-width: 45px;
+	max-height: 45px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.subcontent ul li a {
+	text-decoration: none;
+	color: lightseagreen;
+	padding: 25px;
+}
+
+.subcontent ul li:hover {
+	background-color: lavender;
+	cursor: pointer;
+}
+
+.subcontent ul li:hover > a {
+	color: darkblue;
+}
+
+/* Image only subcontent */
+
+.dropdowncontent .subcontent .imageonly li {
+	height: 100px;
+	padding-left: 0;
+	padding: 0;
+}
+
+.dropdowncontent .subcontent .imageonly li a {
+	width: 80%;
+	height: 70%;
+	padding: 0;
+	margin: 0;
+	display: block;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dropdowncontent .subcontent .imageonly li a img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* Creates shadow beside dropdown */
+
+#antishadow {
+	margin: 20px;
+	margin-bottom: 0;
+	overflow: hidden;
+	position: absolute;
+	left: 80px;
+	top: 80px;
+	display: none;
+	z-index: 1;
+}
+
+#shadow {
+	margin-right: 20px;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	box-shadow: 0 0 30px #333;
+	width:300px;
+}
+
+/* Test Nav */
+
+#testnav {
+	position: absolute;
+	left: 0;
+	top: 100px;
+	padding: 0;
+	margin: 0;
+	width: 100px;
+	background-color: #eee;
+	z-index: 2;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#testnav ul {
+	padding: 0;
+	margin: 0;
+}
+
+#testnav ul li {
+	height: 100px;
+	width: 100px;
+	padding: 20px;
+	margin: 0;
+	list-style-type: none;
+}
+
+#testnav ul li:hover {
+	cursor: pointer;
+}
+
+#testnav ul li img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+@media only screen and (max-width: 920px) {
+
+	#testnav {
+		display: none;
+	}
+
+	main {
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 560px) {
+
+	#namedisplay {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	#titlewrapper {
+		display: none;
+	}
+
+	#subtitle {
+		display: none;
+	}
+
+}
